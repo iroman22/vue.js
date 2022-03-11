@@ -1,29 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <CabeceraMain></CabeceraMain>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container mt-5">
+    <CabeceraMain></CabeceraMain>
+    <ListaItems></ListaItems>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ListaItems from './components/ListaItems.vue'
 import CabeceraMain from './components/CabeceraMain.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    CabeceraMain
+    CabeceraMain,
+    ListaItems
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
